@@ -2,11 +2,9 @@
 
 echo "Start script..."
 
-sudo apt update
-sudo apt install apache2
-sudo rm /var/www/html/index.html
+sudo apt -y update
+sudo apt -y install apache2
 
-touch /var/www/html/index.html
-echo "<h1>Bohdan Havran</h1>" >> /var/www/html/index.html
+echo "<h1>Bohdan Havran</h1>" > /var/www/html/index.html
 
 echo "Done"
